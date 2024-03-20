@@ -126,7 +126,7 @@ h3 {
 
 .local {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
@@ -143,8 +143,8 @@ footer {
     border-radius: 20px;
 }
 
-.footer{
-    display:flex;
+.footer {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -170,21 +170,24 @@ footer {
         flex-direction: row;
         margin: 7px;
     }
-    .links{
+
+    .links {
         background-color: blanchedalmond;
         border-radius: 7px;
     }
+
     main {
         margin: 7px;
     }
-    footer{
+
+    footer {
         margin: 7px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    
+
     header {
         flex-direction: column;
         justify-content: center;
@@ -193,30 +196,37 @@ footer {
         font-size: 6px;
         flex-wrap: wrap;
     }
-    .logo{
+
+    .logo {
         margin-top: 90px;
     }
-    main{
+
+    main {
         margin-top: 200px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .main-grid{
+
+    .main-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 2fr;
         gap: 3%;
     }
-    .h1-index{
+
+    .h1-index {
         order: -1;
     }
-    .local{
+
+    .local {
         margin: 5px;
     }
-    .map{
+
+    .map {
         border-radius: 12px;
     }
-    footer{
+
+    footer {
         flex-wrap: wrap;
     }
 }
