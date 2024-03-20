@@ -168,11 +168,23 @@ footer {
     header {
         display: flex;
         flex-direction: row;
+        margin: 7px;
+    }
+    .links{
+        background-color: blanchedalmond;
+        border-radius: 7px;
+    }
+    main {
+        margin: 7px;
+    }
+    footer{
+        margin: 7px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
+    
     header {
         flex-direction: column;
         justify-content: center;
@@ -180,10 +192,9 @@ footer {
         column-gap: 3px;
         font-size: 6px;
         flex-wrap: wrap;
-
     }
     .logo{
-        margin-top: 103px;
+        margin-top: 90px;
     }
     main{
         margin-top: 200px;
