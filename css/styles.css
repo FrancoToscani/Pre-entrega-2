@@ -1,0 +1,211 @@
+/*Tipografías */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+
+
+
+* {
+    padding: 0;
+}
+
+
+/*Header*/
+
+
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background-color: blanchedalmond;
+    height: 119px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.logo a {
+    order: -1;
+    z-index: 1;
+}
+
+header section div nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+/*Navbar */
+.links {
+    color: black;
+}
+
+/*Navbar */
+
+header section div nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 15px;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Fin Header*/
+
+
+
+/*Main*/
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3 {
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.comunidad a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.h1-index {
+    align-self: flex-start;
+}
+
+.visit h2 {
+    border-left: 12px;
+    border-right: 0px;
+}
+
+.hongos img {
+    border-radius: 12px
+}
+
+.local {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Fin Main */
+
+
+
+/* Footer */
+
+footer {
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    list-style: none;
+}
+
+/* Fin Footer*/
+
+
+/*Media queries*/
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3px;
+        font-size: 6px;
+        flex-wrap: wrap;
+
+    }
+    .logo{
+        margin-top: 103px;
+    }
+    main{
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr;
+        gap: 3%;
+    }
+    .h1-index{
+        order: -1;
+    }
+    .local{
+        margin: 5px;
+    }
+    .map{
+        border-radius: 12px;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+}
