@@ -7,21 +7,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,500&display=swap');
 
 
+/* Reset */
+
 
 * {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+
+
+/*Fin Reset*/
 
 
 /*Header*/
 
 
+/**/
+
 
 header {
     position: sticky;
+    background-color: blanchedalmond;
     z-index: 1;
     top: 0px;
-    background-color: blanchedalmond;
     height: 119px;
     flex-wrap: wrap;
     align-items: center;
@@ -29,7 +39,8 @@ header {
     width: 100%;
 }
 
-.menu {
+
+header section .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +48,7 @@ header {
     z-index: 1;
 }
 
-.logo a {
+header section div .logo a {
     order: -1;
     z-index: 1;
 }
@@ -50,13 +61,6 @@ header section div nav ul {
     column-gap: 15px;
     flex-wrap: wrap;
 }
-
-/*Navbar */
-.links {
-    color: black;
-}
-
-/*Navbar */
 
 header section div nav ul li a {
     color: black;

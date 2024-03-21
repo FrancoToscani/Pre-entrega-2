@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: burlywood;
+}
+
+header {
+  position: sticky;
+  background-color: blanchedalmond;
+  z-index: 1;
+  top: 0px;
+  height: 119px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
